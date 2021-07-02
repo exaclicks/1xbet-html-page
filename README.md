@@ -48,7 +48,7 @@ a[href^="/to/"] {
 }
 a[href^="/to/"]:before {
     background: #f4f9f3;
-    background-image: none!important;
+    background-image: none!;
     border: 1px solid #1d7b18;
     font-family: 'Open Sans', sans-serif;
     font-size: 11px;
@@ -173,7 +173,7 @@ a[href^="/to/"]:hover:before {
     padding: 5px;
 }
 .brand-details td.none {
-    display: none!important;
+    display: none!;
 }
 .brand-details .brand, .brand-details .ext, .brand-details .rate, .brand-details .reg {
     display: block;
