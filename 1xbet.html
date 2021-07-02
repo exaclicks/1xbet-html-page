@@ -55,6 +55,17 @@
 
 
 
+
+
+.bottomlogo{
+  bottom: 0;
+    padding: 65px;
+    position: absolute;
+}
+.profile{
+  padding-top:60px;
+  text-align: center;
+}
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
@@ -101,9 +112,7 @@ h1, h2 {
   background: #2eafec;
   color: #fff;
 }
-.home{
-  padding-top: 160px;
-}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -125,13 +134,61 @@ h1, h2 {
   margin-left: 300px;
 }
 
+
+
+
+    
+@media (max-width: 500px) {
+  
+    
+.buttondiv{
+
+margin-top: 30px;
+text-align: center;
+/* width: 330px; */
+/* background-color: #6bcb52; */
+
+
+}
+.buttona{
+  margin: auto;
+}
+}
+
+@media (min-width: 500px)   {
+ 
+.buttondiv{
+
+margin-top: 30px;
+text-align: center;
+/* width: 330px; */
+/* background-color: #6bcb52; */
+margin-bottom: 30px;
+margin-bottom: 20px;
+}
+}
+
+
+
+
 @media (max-width: 1199px) {
   #header {
-    left: -300px;
+    top: 0;
+    position: initial;
+    width: auto;
   }
   #main {
     margin-left: 0;
   }
+  #navbar a{
+    padding: 0px 0px;
+  }
+  .flex-column{
+    flex-direction:inherit;
+  }
+  .nav-menu > ul > li{
+   padding-left: 50px;
+}
 }
 
 /*--------------------------------------------------------------
@@ -219,15 +276,6 @@ h1:before, h2:before{
   }
 
 
-.buttondiv{
-
-  margin-top: 30px;
-  text-align: center;
-  /* width: 330px; */
-  /* background-color: #6bcb52; */
-  margin-bottom: 30px;
-  margin-bottom: 20px;
-}
 
 .buttona{
   border-radius: 8px;
@@ -251,53 +299,10 @@ h1:before, h2:before{
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 30px 0;
   overflow: hidden;
 }
 
-/*--------------------------------------------------------------
-# About
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-# Facts
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-# Akills
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-# Resume
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-# Portfolio
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-# Portfolio Details
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-# Services
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-# Testimonials
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-# Contact
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
 #footer {
   padding: 15px;
   color: #f4f6fd;
@@ -328,10 +333,782 @@ section {
 
 
 
+a {
+    background-color: transparent;
+}
+a:active, a:hover {
+    outline: 0;
+}
+strong {
+    font-weight: 700;
+}
+img {
+    border: 0;
+}
+button {
+    margin: 0;
+    font: inherit;
+    color: inherit;
+}
+button {
+    overflow: visible;
+}
+button {
+    text-transform: none;
+}
+button {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+td {
+    padding: 0;
+}
+
+a, a:visited {
+    text-decoration: underline;
+}
+
+img, tr {
+    page-break-inside: avoid;
+}
+img {
+    max-width: 100%;
+}
+.table {
+    border-collapse: collapse;
+}
+.table td {
+    background-color: #fff;
+}
+
+html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+button {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+a:focus, a:hover {
+    color: #23527c;
+    text-decoration: underline;
+}
+a:focus {
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+img {
+    vertical-align: middle;
+}
+table {
+    background-color: transparent;
+}
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+
+}
+.table>tbody>tr>td {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+}
+.table-condensed>tbody>tr>td {
+    padding: 5px;
+}
+.table-bordered {
+    border: 1px solid #ddd;
+}
+.table-bordered>tbody>tr>td {
+
+  vertical-align: middle;
+
+}
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+.table-hover>tbody>tr:hover {
+    background-color: #f5f5f5;
+}
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.btn:active:focus, .btn:focus {
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+.btn:focus, .btn:hover {
+    color: #333;
+    text-decoration: none;
+}
+.btn:active {
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+.btn-success {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+.btn-success:focus {
+    color: #fff;
+    background-color: #449d44;
+    border-color: #255625;
+}
+.btn-success:hover {
+    color: #fff;
+    background-color: #449d44;
+    border-color: #398439;
+}
+.btn-success:active {
+    color: #fff;
+    background-color: #449d44;
+    border-color: #398439;
+}
+.btn-success:active:focus, .btn-success:active:hover {
+    color: #fff;
+    background-color: #398439;
+    border-color: #255625;
+}
+.btn-success:active {
+    background-image: none;
+}
+.btn-sm {
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+.panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+.panel-body {
+    padding: 15px;
+}
+.panel-body:after, .panel-body:before {
+    display: table;
+    content: " "}
+.panel-body:after {
+    clear: both;
+}
+
+html, body {
+    -webkit-text-size-adjust: none;
+}
+html, body, div, table, tbody, td, tr, button, a, i, img, strong {
+    margin: 0;
+    padding: 0;
+}
+img {
+    border: 0;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.panel, .box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+.panel-inverse {
+    background-color: #4F4F4F;
+    color: #FFFFFF;
+}
+.panel-inverse * {
+    border-color: #575757;
+}
+.table-hover>tbody>tr:hover {
+    background-color: #444444;
+}
+table td {
+    vertical-align: middle;
+}
+.panel-body {
+    overflow: hidden;
+}
+.panel-body td{
+    text-align: center;
+}
+
+.row1 td, .row3 td{
+  background-color: #4F4F4F;
+
+}
+
+.row2 td, .row4 td{
+  background-color: #272727;
+
+}
+
+
+
+
+
+
+
+details {
+    display: block;
+}
+a {
+    background-color: transparent;
+    color: #1d7b18;
+}
+a:active, a:hover {
+    outline: 0;
+}
+img {
+    border: 0;
+    width: auto;
+    height: 100%;
+    max-width: 100%}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+td {
+    padding: 0;
+}
+body:after {
+    content: url(/assets/img/close.png) url(/assets/img/loading.gif) url(/assets/img/prev.png) url(/assets/img/next.png);
+    display: none;
+}
+.btn {
+    display: block;
+    padding: 10px;
+    margin: 0 auto;
+    font: 600 18px/20px 'open sans', sans-serif;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    transition: .2s linear;
+    border-radius: 2px;
+    background: #1d7b18;
+}
+.btn:hover {
+    background: #2eb127;
+}
+.btn[type=submit] {
+    background-color: #1d7b18;
+}
+a[href^="/to/"] {
+    position: relative;
+}
+a[href^="/to/"]:before {
+    background: #f4f9f3;
+    background-image: none!important;
+    border: 1px solid #1d7b18;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #5d5d5d;
+    white-space: normal;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    min-width: 300px;
+    max-width: 300px;
+    margin: 10px 0 0;
+    padding: 5px;
+    text-align: left;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: transform .25s, opacity .25s, visibility 0s .25s;
+    pointer-events: none;
+}
+a[href^="/to/"]:hover {
+    z-index: 3;
+}
+a[href^="/to/"]:hover:before {
+    visibility: visible;
+    opacity: 1;
+    transform: none;
+    transition: opacity .25s, transform .25s;
+}
+.brand-details a[href^="/to/"]:before {
+    content: none;
+}
+[data-tooltip] {
+    position: relative;
+    cursor: pointer;
+}
+[data-tooltip]:after, [data-tooltip]:before {
+    position: absolute;
+    visibility: hidden;
+    -ms-filter: "alpha(Opacity=0)";
+    opacity: 0;
+    -webkit-transition: opacity .2s ease-in-out, visibility .2s ease-in-out, -webkit-transform .2s cubic-bezier(.71, 1.7, .77, 1.24);
+    -moz-transition: opacity .2s ease-in-out, visibility .2s ease-in-out, -moz-transform .2s cubic-bezier(.71, 1.7, .77, 1.24);
+    transition: opacity .2s ease-in-out, visibility .2s ease-in-out, transform .2s cubic-bezier(.71, 1.7, .77, 1.24);
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    pointer-events: none;
+}
+[data-tooltip]:focus:after, [data-tooltip]:focus:before, [data-tooltip]:hover:after, [data-tooltip]:hover:before {
+    visibility: visible;
+    -ms-filter: "alpha(Opacity=100)";
+    opacity: 1;
+}
+[data-tooltip]:before {
+    z-index: 1001;
+    border: 6px solid transparent;
+    background: 0 0;
+    content: ""}
+[data-tooltip]:after {
+    z-index: 1000;
+    padding: 8px;
+    width: 350px;
+    background-color: #000;
+    background-color: hsla(0, 0%, 20%, .9);
+    color: #fff;
+    content: attr(data-tooltip);
+    font-size: 14px;
+    line-height: 1.2;
+}
+[data-tooltip]:after, [data-tooltip]:before {
+    bottom: 100%;
+    left: 50%}
+[data-tooltip]:before {
+    margin-left: -6px;
+    margin-bottom: -12px;
+    border-top-color: #000;
+    border-top-color: hsla(0, 0%, 20%, .9);
+}
+[data-tooltip]:after {
+    margin-left: -80px;
+}
+[data-tooltip]:focus:after, [data-tooltip]:focus:before, [data-tooltip]:hover:after, [data-tooltip]:hover:before {
+    -webkit-transform: translateY(-12px);
+    -moz-transform: translateY(-12px);
+    transform: translateY(-12px);
+}
+.brand-details {
+    margin: 1% auto 16px;
+    border: 2px solid #b1b1b1;
+}
+.brand-details table {
+    position: relative;
+    width: 100%;
+    padding: 70px 0 115px;
+    border-collapse: separate;
+    font: normal 12px/14px 'open sans', sans-serif;
+    color: #6b6b6b;
+    empty-cells: hide;
+}
+.brand-details td {
+    padding: 5px;
+}
+.brand-details td.none {
+    display: none!important;
+}
+.brand-details .brand, .brand-details .ext, .brand-details .rate, .brand-details .reg {
+    display: block;
+    position: absolute;
+    top: 0;
+}
+.brand-details .brand td, .brand-details .ext td {
+    display: block;
+}
+.brand-details .brand {
+    left: 0;
+    width: 45%}
+.brand-details .brand td span {
+    display: block;
+    height: 50px;
+    text-indent: -9999px;
+}
+.brand-details .brand .img {
+  padding-top: 20px;
+    text-align: center;
+    line-height: 50px;
+}
+.brand-details .brand .img span {
+    display: inline-block;
+    width: 0;
+    vertical-align: middle;
+    height: 0;
+    font-size: 0;
+    color: transparent;
+}
+.brand-details .brand .img span:not([class]) {
+    display: none;
+}
+.brand-details .brand .img img {
+    vertical-align: middle;
+    width: auto;
+    height: auto;
+    max-width: 100%}
+.brand-details .rate {
+    right: 0;
+    width: 55%;
+    margin: 17px 0;
+}
+.brand-details .rate td, .brand-details .reg td {
+    display: block;
+    padding-left: 1%;
+    padding-right: 1%;
+    overflow: hidden;
+}
+.brand-details .rate td:first-child, .brand-details .reg td:first-child {
+    float: left;
+    width: 48%}
+.brand-details .rate {
+    font: 600 13px/16px 'open sans', sans-serif;
+    color: #908b8b;
+}
+.brand-details .rate td:first-child {
+    font-weight: 300;
+    width: 30%}
+.brand-details .rate td:first-child span {
+    display: none;
+}
+.brand-details .rate td span {
+    color: #4081d8;
+}
+.brand-details .rate td i, .brand-details .rate td i span {
+    display: block;
+    width: 100px;
+    height: 16px;
+    background: url(/assets/img/sterne.png) repeat-x 0 bottom;
+}
+.brand-details .rate td i i, .brand-details .rate td i span {
+    background-position: 0 0;
+    text-indent: -9999px;
+}
+.brand-details .rate td i.wert10 i, .brand-details .rate td i.wert10 span {
+    width: 22px;
+}
+.brand-details .rate td i.wert11 i, .brand-details .rate td i.wert11 span {
+    width: 23.6px;
+}
+.brand-details .rate td i.wert12 i, .brand-details .rate td i.wert12 span {
+    width: 25.2px;
+}
+.brand-details .rate td i.wert13 i, .brand-details .rate td i.wert13 span {
+    width: 26.8px;
+}
+.brand-details .rate td i.wert14 i, .brand-details .rate td i.wert14 span {
+    width: 28.4px;
+}
+.brand-details .rate td i.wert15 i, .brand-details .rate td i.wert15 span {
+    width: 30px;
+}
+.brand-details .rate td i.wert16 i, .brand-details .rate td i.wert16 span {
+    width: 31.6px;
+}
+.brand-details .rate td i.wert17 i, .brand-details .rate td i.wert17 span {
+    width: 33.2px;
+}
+.brand-details .rate td i.wert18 i, .brand-details .rate td i.wert18 span {
+    width: 34.8px;
+}
+.brand-details .rate td i.wert19 i, .brand-details .rate td i.wert19 span {
+    width: 36.4px;
+}
+.brand-details .rate td i.wert20 i, .brand-details .rate td i.wert20 span {
+    width: 40px;
+}
+.brand-details .rate td i.wert20 i, .brand-details .rate td i.wert20 span {
+    width: 42px;
+}
+.brand-details .rate td i.wert21 i, .brand-details .rate td i.wert21 span {
+    width: 43.6px;
+}
+.brand-details .rate td i.wert22 i, .brand-details .rate td i.wert22 span {
+    width: 45.2px;
+}
+.brand-details .rate td i.wert23 i, .brand-details .rate td i.wert23 span {
+    width: 46.8px;
+}
+.brand-details .rate td i.wert24 i, .brand-details .rate td i.wert24 span {
+    width: 48.4px;
+}
+.brand-details .rate td i.wert25 i, .brand-details .rate td i.wert25 span {
+    width: 50px;
+}
+.brand-details .rate td i.wert26 i, .brand-details .rate td i.wert26 span {
+    width: 51.6px;
+}
+.brand-details .rate td i.wert27 i, .brand-details .rate td i.wert27 span {
+    width: 53.2px;
+}
+.brand-details .rate td i.wert28 i, .brand-details .rate td i.wert28 span {
+    width: 54.8px;
+}
+.brand-details .rate td i.wert29 i, .brand-details .rate td i.wert29 span {
+    width: 56.4px;
+}
+.brand-details .rate td i.wert30 i, .brand-details .rate td i.wert30 span {
+    width: 60px;
+}
+.brand-details .rate td i.wert30 i, .brand-details .rate td i.wert30 span {
+    width: 62px;
+}
+.brand-details .rate td i.wert31 i, .brand-details .rate td i.wert31 span {
+    width: 63.6px;
+}
+.brand-details .rate td i.wert32 i, .brand-details .rate td i.wert32 span {
+    width: 65.2px;
+}
+.brand-details .rate td i.wert33 i, .brand-details .rate td i.wert33 span {
+    width: 66.8px;
+}
+.brand-details .rate td i.wert34 i, .brand-details .rate td i.wert34 span {
+    width: 68.4px;
+}
+.brand-details .rate td i.wert35 i, .brand-details .rate td i.wert35 span {
+    width: 70px;
+}
+.brand-details .rate td i.wert36 i, .brand-details .rate td i.wert36 span {
+    width: 71.6px;
+}
+.brand-details .rate td i.wert37 i, .brand-details .rate td i.wert37 span {
+    width: 73.2px;
+}
+.brand-details .rate td i.wert38 i, .brand-details .rate td i.wert38 span {
+    width: 74.8px;
+}
+.brand-details .rate td i.wert39 i, .brand-details .rate td i.wert39 span {
+    width: 76.4px;
+}
+.brand-details .rate td i.wert40 i, .brand-details .rate td i.wert40 span {
+    width: 80px;
+}
+.brand-details .rate td i.wert4 i, .brand-details .rate td i.wert4 span {
+    width: 80px;
+}
+.brand-details .rate td i.wert40 i, .brand-details .rate td i.wert40 span {
+    width: 82px;
+}
+.brand-details .rate td i.wert41 i, .brand-details .rate td i.wert41 span {
+    width: 83.6px;
+}
+.brand-details .rate td i.wert42 i, .brand-details .rate td i.wert42 span {
+    width: 85.2px;
+}
+.brand-details .rate td i.wert43 i, .brand-details .rate td i.wert43 span {
+    width: 86.8px;
+}
+.brand-details .rate td i.wert44 i, .brand-details .rate td i.wert44 span {
+    width: 88.4px;
+}
+.brand-details .rate td i.wert45 i, .brand-details .rate td i.wert45 span {
+    width: 90px;
+}
+.brand-details .rate td i.wert46 i, .brand-details .rate td i.wert46 span {
+    width: 91.6px;
+}
+.brand-details .rate td i.wert47 i, .brand-details .rate td i.wert47 span {
+    width: 93.2px;
+}
+.brand-details .rate td i.wert48 i, .brand-details .rate td i.wert48 span {
+    width: 94.8px;
+}
+.brand-details .rate td i.wert49 i, .brand-details .rate td i.wert49 span {
+    width: 96.4px;
+}
+.brand-details .rate td i.wert50 i, .brand-details .rate td i.wert50 span {
+    width: 100px;
+}
+.brand-details .rate td:first-child, .brand-details .reg td:first-child {
+    text-align: right;
+    white-space: nowrap;
+}
+.brand-details .arg td:first-child {
+    font-weight: 700;
+    text-align: right;
+}
+.brand-details .arg td:first-child:after, .brand-details .rate td:first-child:after, .brand-details .reg td:first-child:after {
+    content: ":"}
+.brand-details .reg {
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    top: auto;
+}
+.brand-details .reg td {
+    height: 54px;
+    line-height: 54px;
+}
+
+.brand-details .ext {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: auto;
+}
+.brand-details .ext td {
+    padding: 0 10px 10px;
+}
+.brand-details .ext td a {
+    max-width: 260px;
+    display: table;
+    padding: 10px 40px;
+}
+.brand-details .reg td:first-child span {
+    display: none;
+}
+@media only screen and (min-width:480px) {
+    .brand-details table {
+    padding: 115px 0 0;
+    
+}
+
+
+.brand-details .brand {
+    right: auto;
+    width: 50%}
+.brand-details .brand td span {
+    height: 54px;
+}
+.brand-details .rate {
+    right: auto;
+    width: 50%;
+    top: 43px;
+    border-bottom: 1px solid #b1b1b1;
+}
+.brand-details .rate td {
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+.brand-details .reg {
+    top: 0;
+    left: auto;
+    width: 50%}
+.brand-details .reg td {
+    border-top: none;
+}
+.brand-details .ext {
+    top: 60px;
+    left: auto;
+    width: 50%}
+.brand-details .ext td {
+    border-bottom: 1px solid #b1b1b1;
+}
+}@media only screen and (min-width:768px) {
+    .brand-details .brand, .brand-details .rate {
+    width: 210px;
+}
+.brand-details .ext, .brand-details .reg {
+    width: 25%}
+.brand-details table {
+    padding: 17px 25% 17px 210px;
+}
+.brand-details .brand {
+    bottom: 0;
+    border-right: 2px solid #b1b1b1;
+}
+.brand-details .brand td span {
+    height: 50px;
+}
+.brand-details .rate {
+    bottom: 0;
+    left: 0;
+    top: 60px;
+    margin: auto;
+    text-align: center;
+    font-size: 0;
+    border: none;
+}
+.brand-details .rate td, .brand-details .rate td:first-child {
+    display: inline-block;
+    width: auto;
+    float: none;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    vertical-align: middle;
+    font-size: 16px;
+}
+.brand-details .reg td, .brand-details .reg td:first-child {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    float: none;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    vertical-align: middle;
+    font-size: 13px;
+    line-height: normal;
+}
+.brand-details .rate:before, .brand-details .reg:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.brand-details .reg {
+    top: 0;
+    bottom: 50px;
+    margin: auto;
+    text-align: center;
+    font-size: 0;
+    border-left: 2px solid #b1b1b1;
+}
+.brand-details .ext td, .brand-details .rate td {
+    border: none;
+}
+.brand-details .ext {
+    top: auto;
+    bottom: 0;
+    border-left: 2px solid #b1b1b1;
+}
+.brand-details .ext td {
+    padding: 5px 10px;
+}
+.brand-details .ext td a {
+    padding: 10px;
+    display: block;
+}
+}
 
   </style>
-
-
 
  
 <!-- ======= End Head ======= -->
@@ -342,12 +1119,13 @@ section {
 
 <body>
 <!-- ======= Header ======= -->
-<i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+
 
 <header id="header">
     <div class="d-flex flex-column">
 
-      <div class="profile">
+      <div class="profile" >
         <amp-img src="assets/img/logo.png" alt="1xbet" class="rounded-circle"  width="100" height="100"></amp-img>
 
       </div>
@@ -362,7 +1140,7 @@ section {
         </ul>
       </nav>    <!-- .nav-menu -->      
       
-      <div class="container" style="padding:65px;">
+      <div class="container bottomlogo">
         <amp-img src="/assets/img/bahisrator.png" alt="1xbet"  width="100" height="100"></amp-img>
        </div>
   
@@ -373,42 +1151,12 @@ section {
   <!-- End Header -->
 
 
-  <!-- Banner -->
-
-  <div class="brand-details" style="padding-left:300px;">
-    <table>
-    <tbody>
-    <tr class="brand"><td class="none">🥇 1xbet&nbsp;</td><td class="logo img"><span>1xbet&nbsp;</span><amp-img src="/assets/img/logo.png" alt="1xbet"  width="50" height="50" class="loaded"></amp-img></td>
-    </tr>
-    <tr class="rate">
-    <td><span>⭐</span>Puanı</td>
-    <td><i class="wert50"><span>5.0 / 5.0</span></i></td>
-    </tr>
-    <tr class="arg"><td>Güven</td>
-    <td>En Güvenilir Bahis Sitesi</td>
-    </tr>
-    <tr class="arg"><td> Bonus Oranı</td>
-    <td>%200</td>
-    </tr>
-    <tr class="arg"><td> Hoşgeldin Bonusu</td>
-    <td>1000 ₺</td>
-    </tr>
-    <tr class="reg">
-    <td><span>⚖️</span>Lisans</td>
-    <td class="logo gambling-commission"><span>UK Gambling Commission</span></td>
-    </tr>
-    <tr class="ext"><td class="none">🏆 bet365&nbsp;</td><td><a class="btnCustom" href="https://siteye.club/yonleniyor/1xbet/" target="_blank" rel="nofollow">Giriş Yap</a></td>
-    </tr>
-    </tbody>
-    </table>
-    <!-- <div class="tnc"><span class="trigger-terms" data-operator="bet365sport">Full T&amp;Cs Apply</span>. New Customers only. Up to £100* in Bet Credits. Sign up, deposit £5* or more to your account and bet365 will match your qualifying deposit in Bet Credits when you place qualifying bets to the same value and they are settled. Min odds/bet and payment method exclusions apply. Returns exclude Bet Credits stake. T&amp;Cs, time limits &amp; exclusions apply.</div> -->
-  </div>
-
-  <!-- End Banner -->
 
 
   <main id="main">
   
+   
+
       
     <section id="1xbet" class="home">
       <div class="container" >
@@ -419,10 +1167,53 @@ section {
 <p>T&uuml;m d&uuml;nyada ve T&uuml;rkiye'de geniş bir kitleye online bahis ve casino hizmeti veren bir platform olarak &ouml;n plana &ccedil;ıkıyor. Rusya&rsquo;nın &ouml;nde gelen bahis şirketlerinden biridir. Sitede aktif olarak 400 bin &uuml;zerinde kullanıcı bulunuyor. <strong>1xbet</strong> site y&ouml;netimi her g&uuml;n 1000'in &uuml;zerinde etkinlik sunmaya odaklanıyor.</p>
 <p>Oyuncular futbol, tenis, basketbol, buz hokeyi, golf, boks, hentbol, Amerikan futbolu gibi onlarca spor dalında yatırım yapma şansı elde edebiliyor. Site y&ouml;netimi para yatırma ve para &ccedil;ekme gibi online işlemlerde de her zaman hızlı sonu&ccedil;lar sunuyor.</p>
 <p>Site &uuml;zerinde ma&ccedil; &ouml;ncesi bahis, canlı bahis, promo (bonus ve promosyonlar), tombala, canlı casino, casino gibi bir&ccedil;ok alanda deneyim yaşama şansınız bulunuyor.</p>
+
+ <!-- BANNER  -->
+ <div class="brand-details">
+  <table>
+  <tbody>
+  <tr class="brand"><td class="none">🥇 bet365&nbsp;</td><td class="logo img"><span>bet365&nbsp;</span>
+    
+    
+    <amp-img src="assets/img/logo.png" alt="1xbet" width="100" height="50"></amp-img>
+  
+  </td>
+  </tr>
+  <tr class="rate">
+  <td><span>⭐</span>Puanı</td>
+  <td><i class="wert40"><span>4.0 / 4.0</span></i></td>
+  </tr>
+  <tr class="arg"><td> Güven</td>
+  <td>En Güvenilir Bahis Sitesi</td>
+  </tr>
+  <tr class="arg"><td> Bonus Oranı</td>
+    <td>%200</td>
+  </tr>
+  <tr class="arg"><td> Hoşgeldin Bonusu</td>
+    <td>1000 ₺</td>
+    </tr>
+  <tr class="reg">
+  <td><span>⚖️</span>Lisans</td>
+  <td><amp-img src="assets/img/licence.png" alt="1xbet" width="100" height="35"></amp-img></td>
+  </tr>
+  <tr class="ext"><td class="none">🏆 1xbet&nbsp;</td><td><div class="buttondiv"><a class="buttona"  href="https://siteye.club/yonleniyor/1xbet/" target="_blank"> 1xbet giriş yapmak i&ccedil;in tıkla! </a></div>
+  </td>
+  </tr>
+  </tbody>
+  </table>
+  
+  </div>
+
+ <!-- END BANNER-->
+
+
 <p>Kendine &ouml;zg&uuml; ve yenilenmiş olan site yapısı ile gerek profesyonel gerekse amat&ouml;r bahis&ccedil;ilerin ihtiyacını karşılayan bir deneyim sunuyor.</p>
 <p>&Uuml;cretsiz ma&ccedil; yayınları sayesinde siteye &uuml;ye olmayan ziyaret&ccedil;ilere dahi keyifli anlar yaşatan son derece kaliteli bir bahis sitesidir.</p>
 <p>Siteye &uuml;ye olmak i&ccedil;in <a href="https://siteye.club/yonleniyor/1xbet" target="_blank"><strong>buraya</strong></a> tıklayabilirsiniz.</p>
 <p>1xbet firmasının &ouml;nde gelen spor kul&uuml;pleri ve spor organizasyonları ile yapmış olduğu sponsorluk anlaşmaları bulunuyor. Ge&ccedil;tiğimiz yıl Barcelona ve Liverpool futbol kul&uuml;pleri ile uzun s&uuml;reli yaptığı anlaşma b&uuml;y&uuml;k bir ses getirmişti.</p>
+
+
+
 
 <div class="buttondiv"><a class="buttona"  href="https://siteye.club/yonleniyor/1xbet/" target="_blank"> 1xbet giriş yapmak i&ccedil;in tıkla! </a></div>
   <!-- End Home -->
