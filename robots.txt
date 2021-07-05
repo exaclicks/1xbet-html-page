@@ -1,5 +1,5 @@
 User-Agent: *
 Disallow:
 Allow: /
-Sitemap: https://ulams.com/sitemap.xml
+Sitemap: https://ulams.com/assets/sitemap.xml
 
