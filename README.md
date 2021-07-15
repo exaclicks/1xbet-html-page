@@ -22,7 +22,7 @@ td {
     padding: 0;
 }
 body:after {
-    content: url(/assets/img/close.png) url(/assets/img/loading.gif) url(/assets/img/prev.png) url(/assets/img/next.png);
+    content: url(/assets/img/close.webp) url(/assets/img/loading.gif) url(/assets/img/prev.webp) url(/assets/img/next.webp);
     display: none;
 }
 .btn {
@@ -242,7 +242,7 @@ a[href^="/to/"]:hover:before {
     display: block;
     width: 100px;
     height: 16px;
-    background: url(/assets/img/sterne.png) repeat-x 0 bottom;
+    background: url(/assets/img/sterne.webp) repeat-x 0 bottom;
 }
 .brand-details .rate td i i, .brand-details .rate td i span {
     background-position: 0 0;
@@ -408,7 +408,7 @@ a[href^="/to/"]:hover:before {
     width: 63px;
     height: 44px;
     vertical-align: middle;
-    background: url(/assets/img/regulierung.png) no-repeat 0 0;
+    background: url(/assets/img/regulierung.webp) no-repeat 0 0;
     text-indent: -9999px;
 }
 .brand-details .ext {
