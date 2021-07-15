@@ -423,7 +423,7 @@ a[href^="/to/"]:hover:before {
 .brand-details .ext td a {
     max-width: 260px;
     display: table;
-    padding: 10px 40px;
+    padding: 10px 20px;
 }
 .brand-details .reg td:first-child span {
     display: none;

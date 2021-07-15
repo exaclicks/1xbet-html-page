@@ -71,13 +71,20 @@
 
 
 
+.bannerMobile table{
+    padding: 50px 0 55px;
+}
+
+
 .bottomlogo{
   bottom: 0;
-    padding: 65px;
+    padding-left: 65px;
+    padding-bottom: 65px;
+
     position: absolute;
 }
 .profile{
-  padding-top:60px;
+  padding-top:20px;
   text-align: center;
 }
 body {
@@ -137,7 +144,7 @@ h1, h2 {
   bottom: 0;
   width: 300px;
   transition: all ease-in-out 0.5s;
-  z-index: 9997;
+  z-index: 19997;
   transition: all 0.5s;
   padding: 0 15px;
   background: #040b14;
@@ -148,12 +155,68 @@ h1, h2 {
   margin-left: 300px;
 }
 
+.logoForMobil{
+    display: none;
+}
+
+.logoForDesktop{
+    display:  inline-block;
+}
+
+
+@media (max-height: 650px) {
+
+    .bottomlogo{
+ display: none;
+    }
+
+}
 
 
 
+.nav-menu a, .nav-menu a:focus {
+  display: flex;
+  align-items: center;
+  color: #a8a9b4;
+  padding: 6px 7px;
+  margin-bottom: 4px;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+  
+.bannerMobile{
+        display: none;
+    }
+
+    .bannerDesktop{
+        display: block;
+    }
     
 @media (max-width: 500px) {
-  
+
+    .bannerMobile{
+        display: block;
+    }
+
+    .bannerDesktop{
+        display: none;
+    }
+
+  .ampImgStyleDiv{
+      text-align: center;
+  }
+ .brand-details{
+   padding-bottom: 10px;
+ }
+
+.logoForMobil{
+    display:  inline-table;
+}
+
+.logoForDesktop{
+    display: none;
+}
 
   h2{
     margin-top:20px;
@@ -241,15 +304,7 @@ section {
   white-space: nowrap;
 }
 
-.nav-menu a, .nav-menu a:focus {
-  display: flex;
-  align-items: center;
-  color: #a8a9b4;
-  padding: 12px 15px;
-  margin-bottom: 8px;
-  transition: 0.3s;
-  font-size: 15px;
-}
+
 
 .nav-menu a i, .nav-menu a:focus i {
   font-size: 24px;
@@ -312,6 +367,21 @@ h1:before, h2:before{
   border-radius: 8px;
 
   padding: 20px;
+  background-color: #6bcb52; text-align: center; color: #ffffff; font-family: sans-serif; font-size: 16px; font-weight: bold; text-decoration: none;
+}
+
+
+.bannerMobile table td{
+    text-align: center;
+}
+
+.buttonaMobile{
+  border-radius: 4px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+
   background-color: #6bcb52; text-align: center; color: #ffffff; font-family: sans-serif; font-size: 16px; font-weight: bold; text-decoration: none;
 }
 
@@ -766,10 +836,12 @@ a[href^="/to/"]:hover:before {
     margin: 0.5% 0.5% 16px;
     border: 2px solid #b1b1b1;
 }
+
+
 .brand-details table {
     position: relative;
     width: 100%;
-    padding: 70px 0 115px;
+    padding: 90px 0 115px;
     border-collapse: separate;
     font: normal 12px/14px 'open sans', sans-serif;
     color: #6b6b6b;
@@ -800,7 +872,7 @@ a[href^="/to/"]:hover:before {
     text-indent: -9999px;
 }
 .brand-details .brand .img {
-  padding-top: 20px;
+  padding-top: 10px;
     text-align: center;
     line-height: 50px;
 }
@@ -1014,7 +1086,7 @@ a[href^="/to/"]:hover:before {
 }
 
 .brand-details .ext {
-    bottom: 0;
+    bottom: -10px;
     left: 0;
     right: 0;
     top: auto;
@@ -1025,7 +1097,7 @@ a[href^="/to/"]:hover:before {
 .brand-details .ext td a {
     max-width: 300px;
     display: table;
-    padding: 10px 40px;
+    padding: 10px 20px;
 }
 .brand-details .reg td:first-child span {
     display: none;
@@ -1090,7 +1162,7 @@ a[href^="/to/"]:hover:before {
 .brand-details .rate {
     bottom: 0;
     left: 0;
-    top: 60px;
+    top: 70px;
     margin: auto;
     text-align: center;
     font-size: 0;
@@ -1165,7 +1237,8 @@ a[href^="/to/"]:hover:before {
     <div class="d-flex flex-column">
 
       <div class="profile" >
-        <amp-img src="assets/img/logo.png" alt="1xbet" class="rounded-circle"  width="100" height="100"></amp-img>
+        <amp-img src="assets/img/logo.png"  alt="1xbet"  class="rounded-circle logoForDesktop"  width="200" height="200"></amp-img>
+        <amp-img src="assets/img/logo.png"  alt="1xbet"  class="rounded-circle logoForMobil"  width="100" height="100"></amp-img>
 
       </div>
       <nav id="navbar" class="nav-menu navbar">
@@ -1200,7 +1273,7 @@ a[href^="/to/"]:hover:before {
    
 
       <!-- BANNER  -->
- <div id="1xbet-rating" class="brand-details">
+ <div id="1xbet-rating" class="brand-details bannerDesktop">
     <table>
     <tbody>
     <tr class="brand">
@@ -1210,7 +1283,7 @@ a[href^="/to/"]:hover:before {
       <td class="logo img"><span>bet365&nbsp;</span>
       
       
-      <amp-img src="assets/img/logo.png" alt="1xbet" width="100" height="50"></amp-img>
+      <amp-img src="assets/img/logo.png" alt="1xbet" width="60" height="60"></amp-img>
     
     </td>
     </tr>
@@ -1218,18 +1291,18 @@ a[href^="/to/"]:hover:before {
     <td><span>⭐</span>Puanı</td>
     <td><i class="wert50"><span>5.0 / 5.0</span></i></td>
     </tr>
-    <tr class="arg"><td> Güven</td>
+    <tr class="arg"><td>Güven</td>
     <td>En Güvenilir Bahis Sitesi</td>
     </tr>
-    <tr class="arg"><td> Bonus Oranı</td>
+    <tr class="arg"><td>Bonus Oranı</td>
       <td>%200</td>
     </tr>
-    <tr class="arg"><td> Hoşgeldin Bonusu</td>
-      <td>1000 ₺</td>
+    <tr class="arg"><td>Bonus Tutarı</td>
+      <td>1000₺</td>
       </tr>
     <tr class="reg">
     <td><span>⚖️</span>Lisans</td>
-    <td><amp-img src="assets/img/licence.png" alt="licence" width="100" height="35"></amp-img></td>
+    <td><amp-img src="assets/img/licence.png" alt="licence" width="90" height="45"></amp-img></td>
     </tr>
     <tr class="ext"><td><div class="buttondiv bannerbuttom"><a class="buttona"  href="https://siteye.club/yonleniyor/1xbet/" target="_blank" style="margin:auto"> 1xbet giriş yapmak i&ccedil;in tıkla! </a></div>
     </td>
@@ -1238,6 +1311,45 @@ a[href^="/to/"]:hover:before {
     </table>
     
     </div>
+
+
+
+    <div id="1xbet-rating" class="brand-details bannerMobile">
+        <table style="padding: 50px 0 35px">
+        <tbody>
+      
+       
+            <tr class="arg"><td style="text-align: left;">Lisans</td>
+                <td>  <amp-img src="assets/img/licence.png" alt="licence" width="90" height="45"></amp-img>
+                </td>
+                </tr>
+
+        <tr class=" rate" style="width: 100%;"><td style="text-align: left;    font-weight: 700;width:60%;color: #6b6b6b;">Rating</td>
+            <td><i class="wert50"><span>5.0 / 5.0</span></i></td>
+          </tr>
+
+      
+        <tr class="arg"><td style="text-align: left;">Üyelik Bonusu</td>
+        <td>200%</td>
+        </tr>
+        <tr class="arg"><td style="text-align: left;">Toplam Bonus</td>
+          <td>1000₺</td>
+        </tr>
+
+        
+      
+
+          <tr class="arg"><td style="text-align: left;">Güncel Adres</td>
+            <td>  <div class="buttondiv bannerbuttom"><a class="buttonaMobile"  href="https://siteye.club/yonleniyor/1xbet/" target="_blank" style="margin:auto"> 1xbet giriş  </a></div></td>
+            </tr>
+
+       
+          
+        
+        </tbody>
+        </table>
+        
+        </div>
   
    <!-- END BANNER-->
 
@@ -1248,8 +1360,12 @@ a[href^="/to/"]:hover:before {
         
         <h1>1xbet</h1>
 <br>
-        <amp-img  class="ampImgStyle" src="assets/img/1xbet_incelemesi.jpg" alt="1xbet_incelemesi" width="260" height="158"></amp-img>
-<p>T&uuml;m d&uuml;nyada ve T&uuml;rkiye'de geniş bir kitleye online bahis ve casino hizmeti veren bir platform olarak &ouml;n plana &ccedil;ıkıyor. Rusya&rsquo;nın &ouml;nde gelen bahis şirketlerinden biridir. Sitede aktif olarak 400 bin &uuml;zerinde kullanıcı bulunuyor. <strong>1xbet</strong> site y&ouml;netimi her g&uuml;n 1000'in &uuml;zerinde etkinlik sunmaya odaklanıyor.</p>
+
+<div class="ampImgStyleDiv">
+    <amp-img  class="ampImgStyle" src="assets/img/1xbet_incelemesi.jpg" alt="1xbet_incelemesi" width="260" height="158"></amp-img>
+    
+</div>
+        <p>T&uuml;m d&uuml;nyada ve T&uuml;rkiye'de geniş bir kitleye online bahis ve casino hizmeti veren bir platform olarak &ouml;n plana &ccedil;ıkıyor. Rusya&rsquo;nın &ouml;nde gelen bahis şirketlerinden biridir. Sitede aktif olarak 400 bin &uuml;zerinde kullanıcı bulunuyor. <strong>1xbet</strong> site y&ouml;netimi her g&uuml;n 1000'in &uuml;zerinde etkinlik sunmaya odaklanıyor.</p>
 
  
 
