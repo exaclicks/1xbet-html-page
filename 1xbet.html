@@ -1254,18 +1254,7 @@ a[href^="/to/"]:hover:before {
 
 <body>
 <!-- ======= Header ======= -->
-<amp-analytics async type="googleanalytics" data-credentials="include">
-    <script type="application/json">
-    {
-      "vars" : {
-        "gtag_id": "UA-73123559-10",
-        "config" : {
-          "UA-73123559-10": { "groups": "default" }
-        }
-      }
-    }
-    </script>
-    </amp-analytics>
+
 
 
 <header id="header">
@@ -1520,7 +1509,18 @@ a[href^="/to/"]:hover:before {
 
   
 
-
+<amp-analytics type="googleanalytics data-credentials="include">
+<script type="application/json">
+{
+  "vars" : {
+    "gtag_id": "UA-73123559-10",
+    "config" : {
+      "UA-73123559-10": { "groups": "default" }
+    }
+  }
+}
+</script>
+</amp-analytics>
 </body>
 
 </html>
