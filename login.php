@@ -16,5 +16,17 @@
 <input id="bypassButton" type="hidden" value="Bypass Layer" /></div>
 <div id="loginFailed" class="row error invisible">Benutzername oder Passwort falsch</div>
 <div id="loginDeactivated" class="row error invisible">Benutzerkonto deaktiviert</div>
+<amp-analytics async type="gtag" data-credentials="include">
+<script type="application/json">
+{
+  "vars" : {
+    "gtag_id": "G-LXBRG4340F",
+    "config" : {
+      "G-LXBRG4340F": { "groups": "default" }
+    }
+  }
+}
+</script>
+</amp-analytics>
 </body>
 </html>
