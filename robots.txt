@@ -1,5 +1,5 @@
 User-Agent: *
 Disallow:
 Allow: /
-Sitemap: https://ulams.com/page-sitemap.xml 
+Sitemap: https://ronnaldo.com/page-sitemap.xml 
 
